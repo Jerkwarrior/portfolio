@@ -1,16 +1,57 @@
 <template>
   <div id="app">
     <div class="spacer">
+      <pre>
+
+
+         (`.  : \               __..----..__
+          `.`.| |:          _,-':::''' '  `:`-._
+            `.:\||       _,':::::'         `::::`-.
+              \\`|    _,':::::::'     `:.     `':::`.
+               ;` `-''  `::::::.                  `::\
+            ,-'      .::'  `:::::.         `::..    `:\
+          ,' /_) -.            `::.           `:.     |
+        ,'.:     `    `:.        `:.     .::.          \
+   __,-'   ___,..-''-.  `:.        `.   /::::.         |
+  |):'_,--'           `.    `::..       |::::::.      ::\
+   `-'                 |`--.:_::::|_____\::::::::.__  ::|
+                       |   _/|::::|      \::::::|::/\  :|
+                       /:./  |:::/        \__:::):/  \  :\
+                     ,'::'  /:::|        ,'::::/_/    `. ``-.__
+                    ''''   (//|/\      ,';':,-'         `-.__  `'--..__
+                                                             `''---::::'
+</pre>
+
+
+
+
+
+
+
+
     </div>
     <div class="terminal">
-    <h3>> Hello!</h3>
-    <h3>> Luke Marco</h3>
-    <h3>> Full stack Developer</h3>
-    <h3>> Hire me</h3>
-    <h3>{{text}}</h3>
-    <h3 id='type'> {{text2}}
-      <span class="terminal-input"></span>
-    </h3>
+      <ul>
+        <li>
+          <h3 id = 'first'>> Hello!</h3>
+        </li>
+        <li>
+          <h3 id = 'second'>> Luke Marco</h3>
+        </li>
+        <li>
+          <h3 id = 'third'>> Full Stack Web Developer</h3>
+        </li>
+        <li>
+          <h3 id = 'fourth'>> Hire Me</h3>
+        </li>
+        <li>
+          <h3>{{text}}</h3>
+        </li>
+        <li>
+          <h3 id='type'> {{text2}} <span class="terminal-input"></span> </h3>
+        </li>
+      </ul>
+
   </div>
   </div>
 </template>
@@ -29,10 +70,19 @@ export default {
       setInterval(function() {
         self.text2 = "Would you like to know more?";
       }, 300);
+    },
+    moveLine: function() {
+      const self = this;
+      window.setTimeout(function() {
+        self.text = '> ' + self.text2;
+         document.getElementById('first').display = 'none';
+         document.getElementById('type').innerHTML = '';
+      }, 7000);
     }
   },
   mounted: function() {
     this.firstLine()
+    this.moveLine()
   }
 }
 </script>
@@ -51,28 +101,28 @@ body
   margin-top: 0 auto
   background-color: black
 
+ul
+  list-style: none
+
 h3
   white-space: nowrap
 
 @keyframes terminal-input
-  0%
-    background-color: RBG(72, 230, 13)
   50%
     background-color: black
   100%
-    background-color: RBG(72, 230, 13)
+    background-color: RGB(72, 230, 13)
 
 .terminal-input
   height: 20px
   width: 10px
   display: inline-block
   background-color: RGB(72, 230, 13)
-  animation: terminal-input
-  animation-duration: 1.5s
-  animation-iteration-count: infinite
+  animation: terminal-input 1.5s infinite
 
 .spacer
   height: 300px
+  color: RGB(72, 230, 13)
 
 .terminal
   margin-right: 1000px
