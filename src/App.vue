@@ -1,34 +1,6 @@
 <template>
   <div id="app">
     <div class="spacer">
-      <pre>
-
-
-         (`.  : \               __..----..__
-          `.`.| |:          _,-':::''' '  `:`-._
-            `.:\||       _,':::::'         `::::`-.
-              \\`|    _,':::::::'     `:.     `':::`.
-               ;` `-''  `::::::.                  `::\
-            ,-'      .::'  `:::::.         `::..    `:\
-          ,' /_) -.            `::.           `:.     |
-        ,'.:     `    `:.        `:.     .::.          \
-   __,-'   ___,..-''-.  `:.        `.   /::::.         |
-  |):'_,--'           `.    `::..       |::::::.      ::\
-   `-'                 |`--.:_::::|_____\::::::::.__  ::|
-                       |   _/|::::|      \::::::|::/\  :|
-                       /:./  |:::/        \__:::):/  \  :\
-                     ,'::'  /:::|        ,'::::/_/    `. ``-.__
-                    ''''   (//|/\      ,';':,-'         `-.__  `'--..__
-                                                             `''---::::'
-</pre>
-
-
-
-
-
-
-
-
     </div>
     <div class="terminal">
       <ul>
@@ -50,8 +22,10 @@
         <li>
           <h3 id='type'> {{text2}} <span class="terminal-input"></span> </h3>
         </li>
+        <li>
+          <span class="terminal-input" id="hidden-input"></span>
+        </li>
       </ul>
-
   </div>
   </div>
 </template>
@@ -75,8 +49,9 @@ export default {
       const self = this;
       window.setTimeout(function() {
         self.text = '> ' + self.text2;
-         document.getElementById('first').display = 'none';
+         document.getElementById('first').style.display = 'none';
          document.getElementById('type').innerHTML = '';
+         document.getElementById('hidden-input').style.display = 'inline-block';
       }, 7000);
     }
   },
@@ -119,6 +94,9 @@ h3
   display: inline-block
   background-color: RGB(72, 230, 13)
   animation: terminal-input 1.5s infinite
+
+#hidden-input
+  display: none
 
 .spacer
   height: 300px
