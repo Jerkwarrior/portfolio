@@ -1,6 +1,5 @@
 <template lang="html">
   <div class="about">
-
     <h1>ABOUT</h1>
   </div>
 </template>
@@ -11,4 +10,8 @@ export default {
 </script>
 
 <style lang="sass">
+  .about
+    h1
+      font-size: 10em
+      color: white
 </style>
