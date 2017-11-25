@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="wrapper">
+  <div class="nav-wrapper">
     <nav class="navbar">
       <router-link to="/">Home</router-link>
       <router-link to='/About'>About</router-link>
@@ -20,7 +20,7 @@ export default {
 <style lang="sass">
   @import 'style.sass'
 
-  .wrapper
+  .nav-wrapper
     line-height: 30px
     padding-bottom: 100px
     background-color: $nav-background

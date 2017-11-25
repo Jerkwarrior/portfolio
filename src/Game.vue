@@ -9,6 +9,7 @@
 
 <script>
 export default {
+  // TODO Create simple game
 }
 </script>
 

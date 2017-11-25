@@ -1,3 +1,4 @@
+<!--  TODO Finish terminal!-->
 <template>
   <div id="terminal">
     <div class="spacer">

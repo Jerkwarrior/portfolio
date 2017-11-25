@@ -1,10 +1,10 @@
 <template lang="html">
   <div class="home">
     <navbar></navbar>
+    <foot></foot>
     <transition name='change-page' mode="out-in">
       <router-view></router-view>
     </transition>
-    <footer></footer>
   </div>
 </template>
 
@@ -16,7 +16,8 @@ export default {
 
 
 <style lang="sass">
-
+  // TODO Make page responsive
+  // TODO Add design for mobile devices
   .change-page-enter-active, .change-page-leave-active
     transition: all 1s ease
 
