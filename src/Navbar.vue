@@ -25,7 +25,7 @@ export default {
     background-color: $nav-background
     color: $nav-text
     border-bottom: 5px solid
-    border-bottom-color: $main-text
+    border-bottom-color: $border
 
   .navbar
     text-align: center

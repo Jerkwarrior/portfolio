@@ -1,20 +1,28 @@
-$main-background: #141921
+$main-background: #18282D
 $main-text: #F2F2F2
 
 $nav-background: #191E28
 $nav-text: #D1D2C8
 
+$card-background: #141921
+$border: #738490
+
+$pop-pop: #A63446
+$warm: #1B264F
+
 body
+  margin: 0 auto
   font-family: 'Exo 2', sans-serif
-  background-color: $main-background
   color: $main-text
   overflow: hidden
+  background-color: $main-background
 
 @mixin card
+  background-color: $card-background
   margin: 5%
   padding: 2%
   border: 5px solid
-  border-color: $main-text
+  border-color: $border
   display: block
   text-align: center
   height: 550px
