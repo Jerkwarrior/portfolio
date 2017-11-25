@@ -20,15 +20,10 @@ export default {
 </script>
 
 <style lang="sass">
+  @import 'style.sass'
+
   .about
-    overflow: hidden
-    margin: 5%
-    padding: 2%
-    border: 5px solid
-    display: block
-    text-align: center
-    color: #F2F2F2
-    height: 550px
+    @include card
 
     .left
       display: grid
@@ -36,14 +31,14 @@ export default {
       float: left
 
     .right
+      overflow: hidden
       width: 50%
       text-align: left
-      overflow: hidden
 
     h1
-      position: relative
       top: 50%
-      font-size: 6em
+      @include title-text
+
     p
-      font-size: 2em
+      @include normal-text
 </style>

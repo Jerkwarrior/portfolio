@@ -15,10 +15,6 @@ export default {
 
 
 <style lang="sass">
-  body
-    font-family: 'Exo 2', sans-serif
-    background-color: #141921
-    overflow: hidden
 
   .change-page-enter-active, .change-page-leave-active
     transition: all 1s ease

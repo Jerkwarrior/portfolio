@@ -11,26 +11,17 @@ export default {
 </script>
 
 <style lang="sass">
+  @import 'style.sass'
 
   .title
-    margin: 5%
-    padding: 2%
-    border: 5px solid
-    display: block
-    text-align: center
-    color: #F2F2F2
-    height: 550px
+    @include card
 
-    h1
-      position: relative
-      top: 25%
-      font-size: 6em
-      margin-top: 15px
-      font-weight: lighter
+  h1
+    top: 20%
+    @include title-text
 
-    h3
-      position: relative
-      top: 25%
-      font-size: 2em
-      font-weight: lighter
+  h3
+    top: 20%
+    @include normal-text
+
 </style>

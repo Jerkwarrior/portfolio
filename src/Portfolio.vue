@@ -10,8 +10,10 @@ export default {
 </script>
 
 <style lang="sass">
+  @import 'style.sass'
+
   .portfolio
+    @include card
     h1
-      font-size: 10em
-      color: white
+      @include title-text
 </style>
