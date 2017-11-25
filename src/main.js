@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import App from './App.vue'
 import Terminal from './Terminal.vue'
 import Navbar from './Navbar.vue'
+import Footer from './Footer.vue'
 import Home from './Home.vue'
 import HomeContent from './HomeContent.vue'
 import About from './About.vue'
@@ -13,6 +14,7 @@ import Game from './Game.vue'
 
 Vue.component('terminal', Terminal);
 Vue.component('navbar', Navbar);
+Vue.component('footer', Footer);
 Vue.component('home', Home);
 Vue.component('homeContent', HomeContent);
 Vue.component('about', About);

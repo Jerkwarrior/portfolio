@@ -4,9 +4,7 @@
     <transition name='change-page' mode="out-in">
       <router-view></router-view>
     </transition>
-    <footer>
-      
-    </footer>
+    <footer></footer>
   </div>
 </template>
 

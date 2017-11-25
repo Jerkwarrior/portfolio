@@ -5,7 +5,8 @@
       <router-link to='/About'>About</router-link>
       <router-link to='/portfolio'>Portfolio</router-link>
       <router-link to='/contact'>Contact</router-link>
-      <router-link to='/game'>Game</router-link>
+      <!-- <router-link to='/game'>Game</router-link> -->
+      <!-- TODO Add blog section -->
     </nav>
   </div>
 </template>

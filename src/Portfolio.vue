@@ -1,6 +1,7 @@
 <template lang="html">
   <div class="portfolio">
     <h1>Portfolio</h1>
+    <p>Under Construction!</p>
   </div>
 </template>
 
@@ -16,4 +17,7 @@ export default {
     @include card
     h1
       @include title-text
+    p
+      top: 25%
+      @include normal-text
 </style>
