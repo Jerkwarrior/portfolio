@@ -1,9 +1,13 @@
 <template lang="html">
   <div class="contact">
-    <i class="fa fa-envelope-square" aria-hidden="true"></i>
-    <i class="fa fa-facebook-square" aria-hidden="true"></i>
-    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-    <i class="fa fa-github-square" aria-hidden="true"></i>
+    <div class="link-top"></div>
+    <div class="link-container">
+      <a href="#"><i class="fa fa-envelope-square"></i></a>
+      <a href="#"><i class="fa fa-facebook-square"></i></a>
+      <a href="#"><i class="fa fa-linkedin-square"></i></a>
+      <a href="#"><i class="fa fa-github-square"></i></a>
+    </div>
+    <div class="link-bottom"></div>
   </div>
 </template>
 
@@ -18,9 +22,31 @@ export default {
   .contact
     @include card
 
-  .fa
-    position: relative
-    top: 25%
-    font-size: 200px
-    padding: 2%
+    .link-top
+      display: relative
+      height: 33%
+    .link-container
+      display: relative
+      height: 33%
+    .link-bottom
+      display: relative
+      height: 33%
+
+    a
+      color: 180px
+      border: 1px solid
+      border-color: $main-background
+      text-decoration: none
+
+      .fa
+        display: inline
+        font-size: 200px
+        padding: 2%
+        vertical-align: top
+        height: 180px
+        transition: font-size 0.5s ease
+
+        &:hover
+          font-size: 250px
+
 </style>
