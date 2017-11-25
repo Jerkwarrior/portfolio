@@ -22,6 +22,8 @@ export default {
     padding-bottom: 100px
     background-color: #191E28
     color: #D1D2C8
+    border-bottom: 5px solid
+    border-bottom-color: white
 
   .navbar
     text-align: center
@@ -30,7 +32,7 @@ export default {
     vertical-align: middle
     text-decoration: none
     font-size: 1em
-    font-family: 'Roboto', sans-serif
+    font-family: 'Exo 2', sans-serif
     color: #D1D2C8
     padding-left: 30px
     padding-right: 20px
@@ -44,7 +46,6 @@ export default {
 
   nav
     .router-link-exact-active
-      // background-color: #141921
       color: #F2F2F2
       font-size: 2em
       cursor: pointer

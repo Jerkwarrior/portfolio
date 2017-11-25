@@ -16,11 +16,12 @@ export default {
 
 <style lang="sass">
   body
-    font-family: 'Roboto', sans-serif
+    font-family: 'Exo 2', sans-serif
     background-color: #141921
+    overflow: hidden
 
   .change-page-enter-active, .change-page-leave-active
-    transition: all 1.5s ease
+    transition: all 1s ease
 
   .change-page-enter, .change-page-leave-to
     transform: translateX(100%)

@@ -1,8 +1,7 @@
 <template lang="html">
   <div class="title">
-    <img src="./assets/member.png" alt="">
-    <h1>Member Chewbacca?</h1>
-    <h3>I member.</h3>
+    <h1>Luke Marco</h1>
+    <h3>Full stack developer</h3>
   </div>
 </template>
 
@@ -12,13 +11,26 @@ export default {
 </script>
 
 <style lang="sass">
+
   .title
+    margin: 5%
+    padding: 2%
+    border: 5px solid
+    display: block
     text-align: center
     color: #F2F2F2
+    height: 550px
+
     h1
+      position: relative
+      top: 25%
       font-size: 6em
       margin-top: 15px
+      font-weight: lighter
 
     h3
-      font-size: 4em
+      position: relative
+      top: 25%
+      font-size: 2em
+      font-weight: lighter
 </style>
