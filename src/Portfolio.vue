@@ -15,9 +15,11 @@ export default {
 
   .portfolio
     @include card
+
     h1
+      top: 20%
       @include title-text
     p
-      top: 25%
+      top: 20%
       @include normal-text
 </style>

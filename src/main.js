@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
+import Load from './Load.vue'
 import Terminal from './Terminal.vue'
 import Navbar from './Navbar.vue'
+import MobileNavbar from './MobileNavbar.vue'
 import Foot from './Foot.vue'
 import Home from './Home.vue'
 import HomeContent from './HomeContent.vue'
@@ -11,9 +13,10 @@ import Portfolio from './Portfolio.vue'
 import Contact from './Contact.vue'
 import Game from './Game.vue'
 
-
+Vue.component('load', Load);
 Vue.component('terminal', Terminal);
 Vue.component('navbar', Navbar);
+Vue.component('mobile-navbar', MobileNavbar);
 Vue.component('foot', Foot);
 Vue.component('home', Home);
 Vue.component('homeContent', HomeContent);

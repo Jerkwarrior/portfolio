@@ -27,12 +27,16 @@ export default {
     .link-top
       display: relative
       height: 33%
+      @media only screen and (max-device-width: 500px)
+        display: none
     .link-container
       display: relative
       height: 33%
     .link-bottom
       display: relative
       height: 33%
+      @media only screen and (max-device-width: 500px)
+        display: none
 
     a
       color: 180px
@@ -41,14 +45,21 @@ export default {
       text-decoration: none
 
       .fa
+        color: $nav-text
         display: inline
-        font-size: 200px
+        font-size: 12vw
         padding: 2%
         vertical-align: top
         height: 180px
         transition: font-size 0.5s ease
 
+        @media only screen and (max-device-width: 500px)
+          font-size: 16vh
+          margin: 10%
+
         &:hover
-          font-size: 250px
+          font-size: 16vw
+          @media only screen and (max-device-width: 500px)
+            font-size: 16vh
 
 </style>

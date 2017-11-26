@@ -24,15 +24,47 @@ body
   text-align: center
   height: 550px
 
+  @media only screen and (max-device-height: 850px)
+    height: 450px
+  @media only screen and (max-device-height: 768px)
+    height: 350px
+  @media only screen and (max-device-height: 700px)
+    height: 300px
+  @media only screen and (max-device-height: 650px)
+    height: 320px
+
+
 @mixin title-text
   position: relative
-  font-size: 6em
+  font-size: 6vw
   font-weight: lighter
+
+  @media only screen and (max-device-height: 850px)
+    top: 15%
+  @media only screen and (max-device-height: 768px)
+    top: 0%
+  @media only screen and (max-device-height: 700px)
+    top: -5%
+  @media only screen and (max-device-width: 600px)
+    top: 10%
+    font-size: 3em
+
 
 @mixin normal-text
   position: relative
-  font-size: 2em
+  font-size: 2vw
   font-weight: lighter
+
+  @media only screen and (max-device-height: 850px)
+    top: 15%
+  @media only screen and (max-device-height: 768px)
+    top: 0%
+  @media only screen and (max-device-height: 700px)
+    top: -5%
+  @media only screen and (max-device-width: 600px)
+    top: 10%
+    font-size: 1em
+
 
 
 // Test colors below

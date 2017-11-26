@@ -1,8 +1,12 @@
 <template>
-  <div id="app" v-on:click="view= 'v-b'">
+  <div id="app">
     <transition name='component-fade' mode='out-in'>
       <component v-bind:is="view"></component>
     </transition>
+    <!-- <div id="app" v-on:click="view= 'v-b'">
+    <transition name='component-fade' mode='out-in'>
+    <component v-bind:is="view"></component>
+  </transition> -->
   </div>
 </template>
 
@@ -14,23 +18,32 @@ export default {
   },
   components: {
     'v-a': {
-      template: '<terminal></terminal>'
+      template: '<load></load>'
     },
     'v-b': {
       template: '<home></home>'
     }
+  },
+  methods: {
+    displayHome: function() {
+      const self = this;
+      setInterval(function() {
+        self.view = 'v-b';
+      }, 1000);
+    }
+  },
+  mounted: function() {
+    this.displayHome();
   }
 }
 </script>
 
 <style lang="sass">
+  @import 'style.sass'
 
-body
-  background-color: black
+  .component-fade-enter-active, .component-fade-leave-active
+    transition: opacity 1s ease
 
-.component-fade-enter-active, .component-fade-leave-active
-  transition: opacity 1s ease
-
-.component-fade-enter, .component-fade-leave-to
-  opacity: 0
+  .component-fade-enter, .component-fade-leave-to
+    opacity: 0
 </style>

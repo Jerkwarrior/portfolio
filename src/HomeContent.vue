@@ -16,12 +16,12 @@ export default {
   .title
     @include card
 
-  h1
-    top: 20%
-    @include title-text
+    h1
+      top: 20%
+      @include title-text
 
-  h3
-    top: 20%
-    @include normal-text
+    h3
+      top: 20%
+      @include normal-text
 
 </style>
