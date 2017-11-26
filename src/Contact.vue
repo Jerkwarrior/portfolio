@@ -2,10 +2,11 @@
   <div class="contact">
     <div class="link-top"></div>
     <div class="link-container">
-      <a href="#"><i class="fa fa-envelope-square"></i></a>
-      <a href="#"><i class="fa fa-facebook-square"></i></a>
-      <a href="#"><i class="fa fa-linkedin-square"></i></a>
-      <a href="#"><i class="fa fa-github-square"></i></a>
+      <!-- <a href="#"><i class="fa fa-envelope-square"></i></a> -->
+      <!-- TODO Sort safe email overlay and form -->
+      <a href="https://www.facebook.com/luke.marco.89"><i class="fa fa-facebook-square"></i></a>
+      <a href="http://www.linkedin.com/in/luke-marco"><i class="fa fa-linkedin-square"></i></a>
+      <a href="https://www.github.com/jerkwarrior"><i class="fa fa-github-square"></i></a>
     </div>
     <div class="link-bottom"></div>
   </div>
@@ -13,6 +14,7 @@
 
 <script>
 export default {
+
 }
 </script>
 
