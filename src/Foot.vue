@@ -6,8 +6,9 @@
 
 <script>
 export default {
+  }
 // TODO Add year to copyright
-}
+
 </script>
 
 <style lang="sass">
@@ -21,5 +22,7 @@ export default {
     padding: 20px
     color: $nav-text
     text-align: center
+    @media only screen and (max-device-height: 420px)
+      display: none
 
 </style>

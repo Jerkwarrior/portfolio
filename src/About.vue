@@ -28,7 +28,7 @@ export default {
       width: 50%
       height: 550px
       float: left
-      @media only screen and (max-device-width: 750px)
+      @media only screen and (max-device-width: 768px)
         display: none
 
     .right
@@ -36,7 +36,7 @@ export default {
       width: 50%
       height: 550px
       text-align: left
-      @media only screen and (max-device-width: 750px)
+      @media only screen and (max-device-width: 768px)
         margin: 0 auto
         text-align: center
         width: 70%
@@ -62,6 +62,13 @@ export default {
         top: 10%
       @media only screen and (max-device-height: 768px)
         top: 5%
+      @media only screen and (max-device-height: 600px)
+        font-size: 2vw
+      @media only screen and (max-device-height: 480px)
+        top: 0%
+      @media only screen and (max-device-height: 340px)
+        top: -5%
+
       @media only screen and (max-device-width: 600px)
         top: 5%
 </style>

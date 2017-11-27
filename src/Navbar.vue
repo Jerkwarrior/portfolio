@@ -27,7 +27,8 @@ export default {
     color: $nav-text
     border-bottom: 5px solid
     border-bottom-color: $border
-
+    @media only screen and (max-device-height: 480px)
+      padding-bottom: 30px
   .navbar
     text-align: center
 

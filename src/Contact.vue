@@ -46,12 +46,10 @@ export default {
 
       .fa
         color: $nav-text
-        // display: inline
         font-size: 12vw
         padding-left: 2%
         padding-right: 2%
         vertical-align: top
-        // height: 160px
         transition: font-size 0.5s ease
 
         @media only screen and (max-device-width: 500px)
@@ -59,6 +57,10 @@ export default {
           margin: 20%
           padding: 2%
           display: inline
+
+        @media only screen and (max-device-height: 600px)
+          font-size: 14vw
+
 
         &:hover
           font-size: 16vw

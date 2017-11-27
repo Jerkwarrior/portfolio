@@ -76,8 +76,8 @@ export default {
 
 
   .dropdown-container
-    // TODO Doesn't work in chrome
-    background-color: RGB(16, 15, 17, 0.9)
+    background-color: RGB(16, 15, 17)
+    opacity: 0.9
     display: flex
     position: absolute
     width: 100%
@@ -85,7 +85,7 @@ export default {
     padding: 0
     justify-content: center
     z-index: 1000
-    max-height: 220px
+    height: 220px
     text-align: center
 
     ul

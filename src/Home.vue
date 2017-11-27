@@ -2,10 +2,10 @@
   <div class="home">
     <navbar class='desktop'></navbar>
     <mobile-navbar class='mobile'></mobile-navbar>
-    <foot></foot>
     <transition name='change-page' mode="out-in">
       <router-view></router-view>
     </transition>
+    <foot></foot>
   </div>
 </template>
 
