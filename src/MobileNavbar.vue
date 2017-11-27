@@ -94,6 +94,7 @@ export default {
     a
       text-decoration: none
       color: $nav-text
+
     nav
     .router-link-exact-active
       color: $main-text

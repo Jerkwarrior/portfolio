@@ -52,7 +52,7 @@ export default {
       @media only screen and (max-device-height: 768px)
         top: 5%
       @media only screen and (max-device-width: 600px)
-        top: 10%
+        top: -10%
 
     p
       top: 20%
@@ -63,5 +63,5 @@ export default {
       @media only screen and (max-device-height: 768px)
         top: 5%
       @media only screen and (max-device-width: 600px)
-        top: 15%
+        top: 5%
 </style>

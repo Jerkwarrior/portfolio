@@ -31,20 +31,21 @@ export default {
   .navbar
     text-align: center
 
-  a
-    vertical-align: middle
-    text-decoration: none
-    font-size: 1em
-    color: $nav-text
-    padding-left: 30px
-    padding-right: 20px
-    border-right: 1px solid
-    border-right-color: $main-text
-    transition: font-size 0.5s ease
+    a
+      vertical-align: middle
+      text-decoration: none
+      font-size: 1em
+      color: $nav-text
+      padding-left: 30px
+      padding-right: 20px
+      border-right: 1px solid
+      border-right-color: $main-text
+      transition: font-size 0.5s ease
 
-  a:hover
-    font-size: 2em
-    color: $main-text
+
+    a:hover
+      font-size: 2em
+      color: $main-text
 
   nav
     .router-link-exact-active
