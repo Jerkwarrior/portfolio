@@ -104,7 +104,7 @@ export default {
 
   .dropdown-enter-active
     transition: opacity 5s ease
-    // TODO This isn't fucking working!
+    // HACK This isn't working correctly!
   .dropdown-leave-active
     transition: opacity 0.5s ease
     // transform: translate3d(1000%)
