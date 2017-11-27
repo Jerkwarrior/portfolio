@@ -76,6 +76,7 @@ export default {
 
 
   .dropdown-container
+    // TODO Doesn't work in chrome
     background-color: RGB(16, 15, 17, 0.9)
     display: flex
     position: absolute

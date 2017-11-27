@@ -7,7 +7,6 @@
     <transition name='component-fade' mode='out-in'>
     <component v-bind:is="view"></component>
   </transition> -->
-  <link rel="stylesheet" href="./src/assets/fonts/font-awesome/css/font-awesome.min.css">
   </div>
 </template>
 

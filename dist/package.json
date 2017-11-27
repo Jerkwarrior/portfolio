@@ -1,0 +1,10 @@
+{
+ "name": "lukemarco",
+ "version": "1.0.0",
+ "description": "personalwebsite",
+ "author": "Luke Marco",
+ "private": true,
+ "scripts": {
+   "postinstall": "npm install express"
+ }
+}
