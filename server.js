@@ -2,13 +2,16 @@
 
 var express = require('express');
 var path = require('path');
-// var history = require('connect-history-api-fallback');
+var history = require('connect-history-api-fallback');
 var serveStatic = require('serve-static');
 
 
 app = express();
-// app.use(history());
 app.use(serveStatic(__dirname + "/dist"));
+
+app.use(staticFileMiddleware);
+app.use(history());
+app.use(staticFileMiddleware);
 
 var port = process.env.PORT || 5000;
 app.listen(port);
