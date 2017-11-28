@@ -5,6 +5,7 @@
  "author": "Luke Marco",
  "private": true,
  "scripts": {
-   "postinstall": "npm install express connect-history-api-fallback",
+   "postinstall": "npm install express",
+   "preinstall": "npm install connect-history-api-fallback"
  }
 }
