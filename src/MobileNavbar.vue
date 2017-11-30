@@ -50,7 +50,6 @@ export default {
   .button-container
     position: absolute
     right: 5%
-    // height: 100%
     width: 50px
     margin-top: 5px
     z-index: 1001
@@ -105,10 +104,9 @@ export default {
 
   .dropdown-enter-active
     transition: opacity 5s ease
-    // HACK This isn't working correctly!
+    // FIXME This isn't working smoothly
   .dropdown-leave-active
     transition: opacity 0.5s ease
-    // transform: translate3d(1000%)
 
   .dropdown-enter, .dropdown-leave-to
     opacity: 0

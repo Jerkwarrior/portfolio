@@ -3,10 +3,6 @@
     <transition name='component-fade' mode='out-in'>
       <component v-bind:is="view"></component>
     </transition>
-    <!-- <div id="app" v-on:click="view= 'v-b'">
-    <transition name='component-fade' mode='out-in'>
-    <component v-bind:is="view"></component>
-  </transition> -->
   </div>
 </template>
 

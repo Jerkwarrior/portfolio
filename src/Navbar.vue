@@ -5,8 +5,6 @@
       <router-link to='/About'>About</router-link>
       <router-link to='/portfolio'>Portfolio</router-link>
       <router-link to='/contact'>Contact</router-link>
-      <!-- <router-link to='/game'>Game</router-link> -->
-      <!-- TODO Add blog section -->
     </nav>
   </div>
 </template>
@@ -42,7 +40,6 @@ export default {
       border-right: 1px solid
       border-right-color: $main-text
       transition: font-size 0.5s ease
-
 
     a:hover
       font-size: 2em

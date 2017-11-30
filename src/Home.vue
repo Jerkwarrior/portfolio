@@ -17,7 +17,6 @@ export default {
 
 
 <style lang="sass">
-  // TODO Check all major resolutions
   .mobile
     display: none
 

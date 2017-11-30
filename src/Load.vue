@@ -25,7 +25,9 @@ export default {
     .fa-circle-o-notch
       color: $nav-text
       line-height: 6
-      // HACK Line height needs to be set properly
       vertical-align: middle
       font-size: 150px
+
+      @media only screen and (max-device-height: 650px)
+        line-height: 3
 </style>

@@ -7,7 +7,7 @@
 <script>
 export default {
   }
-// TODO Add year to copyright
+// TODO Add year to copyright in js
 
 </script>
 
