@@ -28,6 +28,6 @@ export default {
       vertical-align: middle
       font-size: 150px
 
-      @media only screen and (max-device-height: 650px)
-        line-height: 3
+      @media only screen and (max-device-height: 800px)
+        line-height: 4
 </style>
