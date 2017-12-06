@@ -6,8 +6,8 @@
 
 <script>
 export default {
+  // TODO Add year to copyright in js
   }
-// TODO Add year to copyright in js
 
 </script>
 
@@ -19,7 +19,8 @@ export default {
     bottom: 0px
     left: 0px
     right: 0px
-    padding: 20px
+    padding: 5px
+    // height: 40px
     color: $nav-text
     text-align: center
     @media only screen and (max-device-height: 420px)

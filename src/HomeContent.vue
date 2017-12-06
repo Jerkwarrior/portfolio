@@ -17,11 +17,12 @@ export default {
     @include card
 
     h1
-      top: 20%
       @include title-text
+      top: 20%
 
     h3
-      top: 20%
       @include normal-text
+      top: 20%
+
 
 </style>

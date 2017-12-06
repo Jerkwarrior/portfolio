@@ -1,10 +1,13 @@
 <template lang="html">
   <div class="home">
-    <navbar class='desktop'></navbar>
-    <mobile-navbar class='mobile'></mobile-navbar>
-    <transition name='change-page' mode="out-in">
-      <router-view></router-view>
-    </transition>
+    <div class="wrapper">
+      <navbar class='desktop'></navbar>
+      <mobile-navbar class='mobile'></mobile-navbar>
+      <transition name='change-page' mode="out-in">
+        <router-view></router-view>
+      </transition>
+    <div class="push"></div>
+    </div>
     <foot></foot>
   </div>
 </template>
@@ -17,6 +20,14 @@ export default {
 
 
 <style lang="sass">
+
+  .wrapper
+    height: 100%
+    margin-bottom: -40px
+
+    .push
+      height: 40px
+
   .mobile
     display: none
 
